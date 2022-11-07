@@ -7,6 +7,8 @@ import org.bukkit.entity.Player;
 
 public class Utilities {
 
+    public static final String database = ChatColor.RED+"This player doesn't exist in the database";
+
 
     public static boolean playerExists(Player p){
         return CustomConfig.get().contains(p.getUniqueId().toString());

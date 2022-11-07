@@ -30,7 +30,7 @@ public class Balance implements CommandExecutor {
                 if(target != null && Utilities.playerExists(target)){
                     p.sendMessage(ChatColor.YELLOW+target.getName()+" has "+Utilities.getMoney(target)+" balance.");
                 }else{
-                    p.sendMessage(ChatColor.RED+"Player doesn't exists in the databse");
+                    p.sendMessage(Utilities.database);
                 }
             }
             else{

@@ -34,6 +34,8 @@ public class Give implements CommandExecutor {
 
                     if (target != null && Utilities.playerExists(target)) {
                         Utilities.transfer(p,target,amount);
+                    }else{
+                        p.sendMessage(Utilities.database);
                     }
                 } else {
                     p.sendMessage(ChatColor.RED + "Usage: /givemoney [target] [amount]");

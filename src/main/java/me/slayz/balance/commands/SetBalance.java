@@ -20,7 +20,7 @@ public class SetBalance implements CommandExecutor {
                     Player target = Bukkit.getPlayer(args[0]);
                     int amount ;
                     if(target == null || !Utilities.playerExists(target)){
-                        p.sendMessage(ChatColor.RED+"This player isn't in the database");
+                        p.sendMessage(Utilities.database);
                         return true;
                     }
 

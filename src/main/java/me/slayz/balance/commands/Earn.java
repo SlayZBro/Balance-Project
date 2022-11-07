@@ -29,7 +29,7 @@ public class Earn implements CommandExecutor {
 
                     list.add(p);
                     Random r = new Random();
-                    int amount = r.nextInt(1,5);
+                    int amount = r.nextInt(4)+1;
                     Utilities.setMoney(p,Utilities.getMoney(p) + amount);
                     p.sendMessage(ChatColor.GREEN+"You earned "+amount+" money!");
 
